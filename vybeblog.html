@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="CSS/vybeblog.css">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Boyvybe</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body>
+    <div class="wrapper">
+        <header>
+            <a href="vybeblog.html" class="logo">Boy<span>V</span>ybe</a>
+            
+            <nav class="NavLInks" id="navLinks">
+                <i id="times" class="fa fa-times"  onclick="hideMenu()"></i>
+                <ul>
+                    <li><a href="vybeblog.html">Home</a></li>
+                    <li><a href="">Discography</a></li>
+                    <li><a href="">Blog</a></li>
+                </ul>
+                 
+            </nav>
+            <i id="bar" class="fa fa-bars" onclick="showMenu()"></i>  
+        </header>
+        <section class="hero">
+            <div class="homeinfo">
+                <div class="hi">
+                    <h1>BoyVybe, The Future of Nigerian Music.</h1>
+                    <p class="subhead">Boyvybe is a prolific songwriter with a knack for creating timeless vibes in the form of bangers.</p>
+                    <div class="profile">
+                        <h2>profile</h2>
+                        <p>Born Sylvester Udoh, Boyvybe is a creative maestro who hails from Akwa Ibon state in the southern part of Nigeria. The prolific musician is a natural when it comes to artistry and is definitely one to look out for. A graduate of communication arts, University of Uyo (Alumni), Sylvester always was a big vibe among his peers, spreading positivity and dope vibes along the way.
+                            </p>
+                          <p>An avid reader who prides himself in humility and elegance and the firm belief that knowledge should be attained at all cost in order for society to reach consciousness. Music is a very personal element of boyvybe's nature which translates in deeper lyrics that seek to positively incite the soul for a reawakening of some sort.</p>
+                          <div class="profilelink">
+                              <P><a href="https://vybediary.blogspot.com/2022/01/boyvybe-profile.html?m=1"> READ MORE...</a></P>
+                          </div>
+                    </div>
+                </div>
+                <div class="homeimage" id="homeimage">
+                    <img id="homeimg" src="images/site2.jpg" alt="my BoyVybe" onclick="showPic()" 
+                    ondblclick= "noimage()">
+                </div>
+
+            </div>
+        </section>
+        <footer>
+            <div>follow to get more from me on my socials</div>
+            <div class="socials">
+                <a href="https://www.facebook.com/Boyvybeofficial/" class="icons">
+                    <i class="fa fa-facebook" aria-hidden="true"></i>
+                </a>
+                <a href="http://www.instagram.com/boy.vybe" class="icons">
+                    <i class="fa fa-instagram" aria-hidden="true"></i>
+                </a>
+                <a href="https://www.twitter.com/boyvybe" class="icons">
+                    <i class="fa fa-twitter" aria-hidden="true"></i>
+                </a>
+                <a href="https://youtube.com/channel/UC6r5FQMead93BmG8uJaHjqw" class="icons">
+                    <i class="fa fa-youtube-play" aria-hidden="true"></i>
+                </a>
+
+            </div>
+ 
+        </footer>
+    </div>
+    <script>
+    //javascript for Menu buttons
+    function showMenu(){
+        x=document.getElementById('navLinks');
+        x.className="open"
+    }
+    function hideMenu(){
+        nav=document.getElementById('navlinks');
+        x.className="close"
+    }
+    // javascript for image
+    function showPic(){
+        document.getElementById('homeimg').src= "images/site1.jpg";
+    }
+    function noimage(){
+        document.getElementById('homeimg').src="images/site2.jpg";
+    }
+    
+         
+
+        
+         
+    </script>
+
+     
+</body>
+</html>

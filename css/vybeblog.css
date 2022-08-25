@@ -1,0 +1,188 @@
+body {
+    background-color: rgb(45, 129, 45);
+    font-family: sans-serif;
+    margin: 1.5em;
+}
+a {
+    text-decoration: none;
+    font-size: 1.3rem;
+    color: black;
+    
+}
+nav ul li {
+    color: black;
+    list-style: none;
+    display: inline-flex;
+    margin-top: -2em;
+    padding: 1.5rem;
+}
+a:hover{
+    color: blanchedalmond;
+    transition: 0.5s;
+}
+.logo {
+    color: black;
+    font-weight: bold;
+    font-size: 2rem;
+}
+.logo span{
+    color: gold;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+header {
+    display: flex;
+    justify-content: space-between;
+    z-index: 100;
+    
+
+}
+.hi h1 {
+    font-size: 3rem;
+    margin-top: 2em;
+}
+.homeinfo {
+    display: flex;
+    margin-top: 5em;
+}
+.homeimage img {
+    width: 30rem;
+    border-radius:5px;
+    max-width: 60rem;
+    
+}
+footer {
+    text-align: center;
+    padding-top: 3rem;
+    padding-bottom: 1.5rem;
+    background-color: rgb(44, 65, 44);
+    margin: 6em -1.5em -1.5em -1.5em;
+}
+.socials {
+    margin: 1.7em;
+}
+.icons {
+    margin: 1em;
+}
+.subhead {
+    font-style: italic;
+    font-weight: 500;
+    margin-top: -1em;
+}
+#times {
+    display: none;
+}
+#bar{
+    display: none;
+}
+.profile {
+    margin-right: 6.5em;
+}
+.profilelink a {
+    margin-top: 20px;
+    border-radius: 15px;
+    background-color: rgb(8, 43, 8);
+    padding: 10px;
+    box-shadow: rgb(1, 32, 1);
+    font-size: 1rem;
+}
+
+@media only screen and (max-width: 600px) {
+    .homeinfo {
+        display: block;
+        width: 100%;
+    }
+    .homeimage img {
+        width: 100%;
+    }
+    header {
+        display: block;
+    }
+    a {
+        text-decoration: none;
+        font-size: 1.5rem;
+        color: black;
+        margin-top: 20px;
+    }
+    a:active {
+        color: green;
+    }
+    .subhead {
+        font-size: 1.4rem;
+    } 
+    nav ul {
+        display: block;
+        padding: 10px;
+        font-size: 20px;
+        border-radius: 10px;
+        margin-top: 2em;
+
+    }
+    .profilelink a {
+        border-radius: 15px;
+        background-color: rgb(8, 43, 8);
+        padding: 10px;
+        font-size: smaller;
+    }
+    .profile {
+    margin-right: 0;
+    }
+    .hi h1 {
+        font-size: 2rem;
+    }
+    nav li a {
+        font-size: smaller;
+         margin: -0.6em;
+
+         
+    }
+    nav li a:hover {
+         color: no;
+    }
+     nav {
+        position: absolute;
+        background: darkgreen;
+        height: 25vh;
+        width: 180px; 
+        top: 0;
+        right: -200px;
+        text-align: left;
+        z-index: 4;
+        transition: 1.5s;
+        visibility: hidden;
+    }
+    nav .fa {
+        position: absolute;
+        text-align: right;
+        cursor: pointer;
+        margin: 30px;
+        right: -200px;
+
+    }
+    #bar{
+        top: 0;
+        text-align: right;
+        display: block;
+        margin-bottom: 50px;
+        cursor: pointer;
+        font-size: 1.5rem;
+    }
+    #times {
+        display: block;
+        text-align: right;
+        right: -20px;
+        background-color: darkgray;
+        padding: 0.6rem;
+        border-radius: 1.5rem;
+    }
+    .open {
+        right: 0;
+        visibility: visible;
+    }
+    .close {
+        right: -200px;
+        
+    }
+      
+}
+
+
